@@ -43,6 +43,25 @@ python main.py
 
 ---
 
+## 🐳 Docker Usage
+
+You can run this application in a Docker container:
+
+### 1. Build the Docker image
+```bash
+docker build -t ecommerce-api .
+```
+
+### 2. Run the container
+```bash
+docker run --env-file .env -p 8000:8000 ecommerce-api
+```
+
+- The app will be available at http://localhost:8000
+- Logs will be written to the `logs/` directory inside the container (mount a volume if you want to persist logs)
+
+---
+
 ## 📝 Environment Variables
 - All configuration is loaded from the `.env` file in the project root.
 - Example variables:
