@@ -4,7 +4,7 @@ A FastAPI-based e-commerce backend with authentication, product management, cart
 
 ---
 
-## 🛠️ Complete Setup Guide
+## Complete Setup Guide
 
 ### 1. Clone the repository
 ```bash
@@ -43,7 +43,7 @@ python main.py
 
 ---
 
-## 🐳 Docker Usage
+## Docker Usage
 
 You can run this application in a Docker container:
 
@@ -62,24 +62,7 @@ docker run --env-file .env -p 8000:8000 ecommerce-api
 
 ---
 
-## 📝 Environment Variables
-- All configuration is loaded from the `.env` file in the project root.
-- Example variables:
-  - `DATABASE_URL=auth.db`
-  - `SECRET_KEY=your-super-secret-key`
-  - `DEBUG=True` (set to `True` to enable detailed logging)
-  - `HOST=0.0.0.0`
-  - `PORT=8000`
-
----
-
-
-The application automatically validates critical settings on startup and shows warnings for:
-
-- **Default SECRET_KEY**: Warns if using the default JWT secret key
-- **Default Email Settings**: Warns if using default email configuration
-
-## 📋 API Endpoints
+## API Endpoints
 
 ### Authentication (`/auth`)
 - `POST /auth/signup` - User registration
@@ -112,7 +95,7 @@ The application automatically validates critical settings on startup and shows w
 - `GET /orders` - View order history
 - `GET /orders/{order_id}` - View order details
 
-## 🔐 Authentication
+## Authentication
 
 The API uses JWT tokens for authentication. Include the token in the Authorization header:
 
@@ -124,7 +107,7 @@ Authorization: Bearer <your-jwt-token>
 - **user**: Can access cart, checkout, and order history
 - **admin**: Can manage products and access all endpoints
 
-## 💾 Database
+## Database
 
 The application uses SQLite with the following tables:
 - `users` - User accounts
@@ -133,6 +116,9 @@ The application uses SQLite with the following tables:
 - `cart` - Shopping cart items
 - `orders` - Order information
 - `order_items` - Individual items in orders
+
+## Entity Relationship Diagram
+![image](https://github.com/user-attachments/assets/4c901782-d04e-4d9a-93df-29ab4dcde3ea)
 
 
 ### Database Changes
