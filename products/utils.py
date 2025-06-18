@@ -8,6 +8,7 @@ def init_products_db():
     # This function is now handled by core.database.init_database()
     pass
 
+
 def create_product(
     name: str,
     description: str,
