@@ -120,7 +120,3 @@ The application uses SQLite with the following tables:
 ## Entity Relationship Diagram
 ![image](https://github.com/user-attachments/assets/4c901782-d04e-4d9a-93df-29ab4dcde3ea)
 
-
-### Database Changes
-
-All database initialization is centralized in `core/database.py`. Add new tables there.
