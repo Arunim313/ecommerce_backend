@@ -1,4 +1,3 @@
-# auth/routes.py
 from fastapi import APIRouter, HTTPException, Depends, status
 from fastapi.security import HTTPBearer
 from pydantic import BaseModel, EmailStr

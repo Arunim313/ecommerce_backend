@@ -1,4 +1,3 @@
-# products/public_routes.py
 from fastapi import APIRouter, HTTPException, status, Query
 from pydantic import BaseModel
 from typing import Optional, List

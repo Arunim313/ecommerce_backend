@@ -1,4 +1,3 @@
-# main.py
 from fastapi import FastAPI
 from auth.routes import router as auth_router
 from products.routes import router as products_router
@@ -10,7 +9,6 @@ from core.database import init_database
 from core.config import settings
 from core.logging import get_logger, setup_logging
 
-# Setup logging explicitly after config is loaded
 setup_logging()
 
 # Initialize logger

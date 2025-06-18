@@ -1,4 +1,3 @@
-# products/routes.py
 from fastapi import APIRouter, HTTPException, Depends, status, Query
 from fastapi.security import HTTPBearer
 from pydantic import BaseModel, HttpUrl

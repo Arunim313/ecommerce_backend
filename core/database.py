@@ -1,4 +1,3 @@
-# core/database.py
 import sqlite3
 from typing import Optional
 from .config import settings

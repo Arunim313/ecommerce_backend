@@ -1,4 +1,3 @@
-# checkout/utils.py
 import sqlite3
 import random
 import time

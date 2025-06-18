@@ -1,4 +1,3 @@
-# checkout/routes.py
 from fastapi import APIRouter, HTTPException, status, Depends
 from pydantic import BaseModel
 from typing import List, Optional
