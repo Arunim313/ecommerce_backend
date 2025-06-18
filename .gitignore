@@ -1,0 +1,22 @@
+# Logs
+logs/
+*.log
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Environment variables
+.env
+
+# Temporary files
+*.tmp
+*.temp
+
+auth/__pycache/
+cart/__pycache/
+checkout/__pycache/
+orders/__pycache/
+products/__pycache/
+auth.db
