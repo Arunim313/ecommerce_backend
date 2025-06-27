@@ -17,7 +17,7 @@ from core.logging import get_logger
 logger = get_logger(__name__)
 
 # Configuration
-SECRET_KEY = os.getenv("SECRET_KEY", "your-secret-key-change-in-production")
+SECRET_KEY = os.getenv("SECRET_KEY")
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 30
 REFRESH_TOKEN_EXPIRE_DAYS = 7
@@ -26,8 +26,8 @@ RESET_TOKEN_EXPIRE_MINUTES = 15
 # Email configuration (using Gmail as example)
 SMTP_SERVER = "smtp.gmail.com"
 SMTP_PORT = 587
-SMTP_USERNAME = os.getenv("SMTP_USERNAME", "arunim.malviya.13@gmail.com")
-SMTP_PASSWORD = os.getenv("SMTP_PASSWORD", "nxuv avzv mded ciyj")
+SMTP_USERNAME = os.getenv("SMTP_USERNAME")
+SMTP_PASSWORD = os.getenv("SMTP_PASSWORD")
 
 security = HTTPBearer()
 

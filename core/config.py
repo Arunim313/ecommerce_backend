@@ -33,7 +33,7 @@ class Settings:
     
     def validate(self) -> None:
         """Validate critical settings"""
-        if not self.SECRET_KEY or self.SECRET_KEY == "your-secret-key-change-in-production":
+        if not self.SECRET_KEY or self.SECRET_KEY == "your-secret-key-change-in-producion":
             print("⚠️  WARNING: Using default SECRET_KEY. Please set a secure SECRET_KEY in your .env file for production.")
         
         if not self.SMTP_USERNAME:
